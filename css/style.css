@@ -1,0 +1,5 @@
+h1 {
+  /*Los estilos que afectarán a cualquier texto con etiqueta h1*/
+  color: red;
+  font-size: 20px;
+}
