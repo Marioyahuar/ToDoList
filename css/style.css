@@ -1,55 +1,63 @@
-/*
-Seleccionar por 
-- Tipo de elemento (h1, div, li, ul, etc ...)
-- Clase -> mucho objetos pueden tener la misma clase
-- ID -> identificador único. Solo un objeto puede tener un ID
-*/
-
 body {
   font-family: Arial, sans-serif;
-  background-image: url("../img/wallpaper.jpg");
-  background-size: cover;
+  background-color: #f8f8f8;
 }
 
 .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 90vh;
 }
 
 h1 {
-  color: white;
+  color: #333;
+  margin-top: 50px;
 }
 
-.input-btn {
-  background-color: #333;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.txtInput {
-  width: 70%;
-}
-
-.inputContainer {
+.input-container {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.task-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+.add-task-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
 .task-list {
-  list-style: none; /*Quita los guiones de la lista*/
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .task-list li {
-  background-color: rgba(240, 248, 255, 0.466);
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0.2);
+  background-color: #fff;
   padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  text-align: center;
 }
