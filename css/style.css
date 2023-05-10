@@ -1,5 +1,55 @@
+/*
+Seleccionar por 
+- Tipo de elemento (h1, div, li, ul, etc ...)
+- Clase -> mucho objetos pueden tener la misma clase
+- ID -> identificador único. Solo un objeto puede tener un ID
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/wallpaper.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 h1 {
-  /*Los estilos que afectarán a cualquier texto con etiqueta h1*/
-  color: red;
-  font-size: 20px;
+  color: white;
+}
+
+.input-btn {
+  background-color: #333;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.txtInput {
+  width: 70%;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-list {
+  list-style: none; /*Quita los guiones de la lista*/
+}
+
+.task-list li {
+  background-color: rgba(240, 248, 255, 0.466);
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
 }
