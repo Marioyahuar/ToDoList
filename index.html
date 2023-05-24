@@ -3,18 +3,23 @@
   <head>
     <title>Lista de Tareas</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Lista de Tareas</h1>
+      <h1 id="TITULO">Lista de Tareas</h1>
       <div class="input-container">
-        <input type="text" placeholder="Escribir tarea" class="task-input" />
-        <button type="button" class="add-task-btn">Añadir Tarea</button>
+        <input
+          id="nuevoElemento"
+          type="text"
+          placeholder="Escribir tarea"
+          class="task-input"
+        />
+        <button onclick="AgregarTarea()" type="button" class="add-task-btn">
+          Añadir Tarea
+        </button>
       </div>
-      <ul class="task-list">
-        <!-- Aquí se añadirán las tareas -->
-        <li>Arreglar los estilos</li>
-      </ul>
+      <ul id="contenedor" class="task-list"></ul>
     </div>
   </body>
 </html>
